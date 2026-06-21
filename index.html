@@ -1,1333 +1,402 @@
-html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>NurulBayt | Premium Islamic Parenting For Muslim Families</title>
-
-<meta name="description" content="Premium Islamic parenting advice, Muslim family guidance, Quran and Sunnah based parenting tips, duas for kids, screen time solutions and faith based family resources.">
-
-<meta name="keywords" content="Islamic parenting, Muslim parenting, Quran parenting, Sunnah parenting, Muslim family, Islamic family, duas for children, Muslim mother tips, Muslim father tips, screen time Islam, teach salah to kids, Islamic bedtime routine, Muslim kids education, parenting in Islam, Islamic habits for children">
-
-<meta name="author" content="NurulBayt">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#0c2d25">
-
-<link rel="canonical" href="https://nurulbayt.pages.dev/">
-
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="NurulBayt | Premium Islamic Parenting">
-<meta property="og:description" content="Raise children who love Allah in a modern world with Quran and Sunnah based guidance.">
-<meta property="og:url" content="https://nurulbayt.pages.dev/">
-<meta property="og:image" content="https://images.unsplash.com/photo-1519817650390-64a93db51149">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="NurulBayt | Premium Islamic Parenting">
-<meta name="twitter:description" content="Helping Muslim parents raise righteous children through Quran and Sunnah.">
-<meta name="twitter:image" content="https://images.unsplash.com/photo-1519817650390-64a93db51149">
-
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
-
-<!-- Schema Markup -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "NurulBayt",
-  "url": "https://nurulbayt.pages.dev/",
-  "description": "Premium Islamic parenting guidance for Muslim families worldwide.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "NurulBayt"
-  }
-}
-</script>
-
-<style>
-/* ===== ROOT VARIABLES ===== */
-:root {
-  --green-dark: #081c15;
-  --green-primary: #0c2d25;
-  --green-light: #1b4332;
-  --gold: #d4af37;
-  --gold-light: #f7e7b6;
-  --cream: #faf8f3;
-  --white: #ffffff;
-  --text: #1e1e1e;
-  --gray: #666;
-  --shadow-sm: 0 10px 25px rgba(0,0,0,.08);
-  --shadow-md: 0 20px 50px rgba(0,0,0,.12);
-  --shadow-lg: 0 30px 70px rgba(0,0,0,.16);
-  --radius: 22px;
-  --transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-
-/* DARK MODE */
-body.dark-mode {
-  --cream: #0a0a0a;
-  --text: #f0f0f0;
-  --gray: #aaa;
-  --white: #1a1a1a;
-  --shadow-sm: 0 10px 25px rgba(0,0,0,.3);
-  --shadow-md: 0 20px 50px rgba(0,0,0,.4);
-  --shadow-lg: 0 30px 70px rgba(0,0,0,.5);
-}
-body.dark-mode .glass {
-  background: rgba(255,255,255,.03);
-  border-color: rgba(255,255,255,.05);
-}
-body.dark-mode .article-card,
-body.dark-mode .stat-card,
-body.dark-mode .testimonial-card,
-body.dark-mode .faq-item,
-body.dark-mode .author-bio,
-body.dark-mode .related-card {
-  background: rgba(255,255,255,.03);
-  border: 1px solid rgba(255,255,255,.05);
-}
-body.dark-mode .section-title h2 { color: white; }
-
-/* RESET */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  font-family: 'Inter', sans-serif;
-  background: var(--cream);
-  color: var(--text);
-  overflow-x: hidden;
-  line-height: 1.8;
-  transition: background .5s, color .5s;
-}
-
-/* CONTAINER */
-.container { width: min(1200px, 90%); margin: auto; }
-
-/* IMAGES */
-img { max-width: 100%; display: block; border-radius: var(--radius); }
-
-/* LINKS */
-a { text-decoration: none; transition: var(--transition); }
-
-/* LIST */
-ul { list-style: none; }
-
-/* SCROLLBAR */
-::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: var(--cream); }
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--gold), var(--green-primary));
-  border-radius: 50px;
-}
-
-/* SELECTION */
-::selection { background: var(--gold); color: white; }
-
-/* BACKGROUND */
-body {
-  background:
-    radial-gradient(circle at top right, rgba(212,175,55,.06), transparent 25%),
-    radial-gradient(circle at bottom left, rgba(27,67,50,.06), transparent 30%),
-    var(--cream);
-}
-
-/* SECTION SPACING */
-section { padding: 100px 0; position: relative; }
-
-/* SECTION TITLE */
-.section-title {
-  text-align: center;
-  margin-bottom: 70px;
-}
-.section-title h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--green-dark);
-  margin-bottom: 15px;
-}
-.section-title p {
-  max-width: 700px;
-  margin: auto;
-  color: var(--gray);
-  font-size: 1.05rem;
-}
-
-/* GLASS EFFECT */
-.glass {
-  background: rgba(255,255,255,.08);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255,255,255,.1);
-  border-radius: var(--radius);
-  transition: var(--transition);
-}
-
-/* HOVER LIFT */
-.hover-lift { transition: var(--transition); }
-.hover-lift:hover { transform: translateY(-12px) scale(1.01); }
-
-/* REVEAL ANIMATION */
-.reveal {
-  opacity: 0;
-  transform: translateY(70px) scale(0.96);
-  transition: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
-
-/* LOADER */
-.loader {
-  position: fixed;
-  inset: 0;
-  background: var(--green-dark);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 99999;
-  transition: .6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-.loader.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-.loader-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: var(--gold);
-  letter-spacing: 3px;
-  animation: pulseLogo 1.5s infinite;
-}
-@keyframes pulseLogo {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.6; transform: scale(0.95); }
-}
-.loader-circle {
-  width: 70px;
-  height: 70px;
-  margin-top: 25px;
-  border: 4px solid rgba(255,255,255,.1);
-  border-top: 4px solid var(--gold);
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
-}
-@keyframes spin { 100% { transform: rotate(360deg); } }
-.loader-progress {
-  width: 200px;
-  height: 3px;
-  background: rgba(255,255,255,.1);
-  border-radius: 10px;
-  margin-top: 30px;
-  overflow: hidden;
-}
-.loader-progress-bar {
-  height: 100%;
-  width: 0%;
-  background: linear-gradient(90deg, var(--gold), var(--gold-light));
-  border-radius: 10px;
-  animation: loadProgress 1.2s ease forwards;
-}
-@keyframes loadProgress {
-  0% { width: 0%; }
-  100% { width: 100%; }
-}
-
-/* PROGRESS BAR */
-.progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--gold), var(--gold-light));
-  z-index: 10000;
-  transition: width .1s;
-}
-
-/* NAVBAR */
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 18px 0;
-  background: rgba(8,28,21,.82);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border-bottom: 1px solid rgba(255,255,255,.06);
-  z-index: 9999;
-  transition: var(--transition);
-}
-nav.scrolled {
-  padding: 12px 0;
-  background: rgba(8,28,21,.94);
-  box-shadow: 0 4px 30px rgba(0,0,0,.2);
-}
-.nav-container {
-  width: min(1200px, 90%);
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--gold);
-  letter-spacing: 1px;
-}
-.logo span { color: white; }
-.nav-menu {
-  display: flex;
-  gap: 35px;
-  align-items: center;
-}
-.nav-menu a {
-  color: rgba(255,255,255,.85);
-  font-size: .95rem;
-  font-weight: 500;
-  position: relative;
-}
-.nav-menu a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  width: 0;
-  height: 2px;
-  background: var(--gold);
-  transition: var(--transition);
-}
-.nav-menu a:hover { color: var(--gold); }
-.nav-menu a:hover::after { width: 100%; }
-.nav-menu a.active::after { width: 100%; }
-
-/* HAMBURGER MENU */
-.menu-btn {
-  display: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-  transition: var(--transition);
-}
-.menu-btn:hover { color: var(--gold); }
-@media(max-width:768px) {
-  .nav-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: rgba(8,28,21,.96);
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-    border-bottom: 1px solid rgba(255,255,255,.06);
-  }
-  .nav-menu.open { display: flex; }
-  .menu-btn { display: block; }
-}
-
-/* BREADCRUMB */
-.breadcrumb {
-  padding: 15px 0;
-  margin: 85px 0 20px;
-  color: var(--gray);
-  font-size: .9rem;
-}
-.breadcrumb a { color: var(--gold); }
-.breadcrumb a:hover { color: var(--green-primary); }
-.breadcrumb span { color: var(--gray); }
-
-/* SEARCH BAR */
-.search-bar {
-  margin-bottom: 40px;
-}
-.search-bar input {
-  width: 100%;
-  max-width: 600px;
-  padding: 18px 28px;
-  border: 2px solid rgba(212,175,55,.2);
-  border-radius: 60px;
-  font-size: 1rem;
-  outline: none;
-  transition: var(--transition);
-  background: rgba(255,255,255,.05);
-  color: var(--text);
-}
-.search-bar input:focus {
-  border-color: var(--gold);
-  box-shadow: 0 0 0 6px rgba(212,175,55,.12);
-}
-
-/* HERO */
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  background:
-    linear-gradient(135deg, rgba(8,28,21,.92), rgba(12,45,37,.88)),
-    url("https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=1600&q=80");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
-}
-.hero::before {
-  content: "";
-  position: absolute;
-  top: -200px;
-  left: -200px;
-  width: 500px;
-  height: 500px;
-  background: rgba(212,175,55,.08);
-  border-radius: 50%;
-  filter: blur(120px);
-  animation: heroGlow 6s infinite alternate;
-}
-@keyframes heroGlow {
-  0% { transform: scale(1); opacity: 0.5; }
-  100% { transform: scale(1.3); opacity: 1; }
-}
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 750px;
-}
-.hero-subtitle {
-  color: var(--gold);
-  font-size: .9rem;
-  font-weight: 600;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin-bottom: 25px;
-}
-.hero-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 5rem;
-  font-weight: 800;
-  line-height: 1.15;
-  color: white;
-  margin-bottom: 25px;
-}
-.hero-title span {
-  background: linear-gradient(135deg, var(--gold), var(--gold-light));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-.hero-text {
-  font-size: 1.1rem;
-  color: rgba(255,255,255,.85);
-  line-height: 2;
-  margin-bottom: 40px;
-  max-width: 650px;
-}
-.btn-primary {
-  display: inline-block;
-  padding: 18px 48px;
-  background: linear-gradient(135deg, var(--gold), #f4d67c);
-  color: var(--green-dark);
-  font-weight: 700;
-  border-radius: 100px;
-  box-shadow: 0 20px 50px rgba(212,175,55,.3);
-  transition: var(--transition);
-  cursor: pointer;
-  border: none;
-}
-.btn-primary:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 30px 60px rgba(212,175,55,.5);
-}
-.hero-badge {
-  display: flex;
-  gap: 20px;
-  margin-top: 50px;
-  flex-wrap: wrap;
-}
-.badge-item {
-  padding: 14px 24px;
-  background: rgba(255,255,255,.08);
-  border: 1px solid rgba(255,255,255,.1);
-  border-radius: 100px;
-  color: white;
-  backdrop-filter: blur(20px);
-  transition: var(--transition);
-}
-.badge-item:hover {
-  background: rgba(212,175,55,.15);
-  border-color: var(--gold);
-  transform: translateY(-4px);
-}
-@media(max-width:768px) {
-  .hero-title { font-size: 3rem; }
-  .hero-text { font-size: 1rem; }
-}
-
-/* ARTICLES GRID */
-.articles-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 35px;
-}
-.article-card {
-  overflow: hidden;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-md);
-  transition: var(--transition);
-  background: rgba(255,255,255,.04);
-  border: 1px solid rgba(255,255,255,.06);
-}
-.article-card:hover {
-  transform: translateY(-15px);
-  box-shadow: var(--shadow-lg);
-  border-color: var(--gold);
-}
-.article-card img {
-  height: 240px;
-  width: 100%;
-  object-fit: cover;
-  transition: var(--transition);
-}
-.article-card:hover img { transform: scale(1.05); }
-.article-content { padding: 30px; }
-.article-category {
-  display: inline-block;
-  padding: 8px 18px;
-  background: rgba(212,175,55,.12);
-  color: var(--gold);
-  font-size: .85rem;
-  font-weight: 600;
-  border-radius: 100px;
-  margin-bottom: 18px;
-}
-.article-content h3 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: var(--green-dark);
-}
-.article-content p {
-  color: var(--gray);
-  margin-bottom: 20px;
-}
-.article-content a {
-  color: var(--gold);
-  font-weight: 700;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-.article-content a:hover { gap: 14px; }
-
-/* STATS */
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-}
-.stat-card {
-  padding: 40px;
-  text-align: center;
-  box-shadow: var(--shadow-sm);
-  border-radius: var(--radius);
-  background: rgba(255,255,255,.04);
-  border: 1px solid rgba(255,255,255,.06);
-  transition: var(--transition);
-}
-.stat-card:hover {
-  transform: translateY(-12px);
-  box-shadow: var(--shadow-lg);
-  border-color: var(--gold);
-}
-.stat-card h3 {
-  font-size: 2.5rem;
-  color: var(--gold);
-  margin-bottom: 15px;
-  font-family: 'Playfair Display', serif;
-}
-
-/* TESTIMONIALS */
-.testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 35px;
-}
-.testimonial-card {
-  padding: 40px;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-md);
-  transition: var(--transition);
-  background: rgba(255,255,255,.04);
-  border: 1px solid rgba(255,255,255,.06);
-}
-.testimonial-card:hover {
-  transform: translateY(-15px);
-  box-shadow: var(--shadow-lg);
-  border-color: var(--gold);
-}
-.stars {
-  font-size: 1.4rem;
-  color: var(--gold);
-  margin-bottom: 20px;
-  letter-spacing: 4px;
-}
-.author {
-  margin-top: 20px;
-  font-weight: 600;
-  color: var(--green-primary);
-}
-
-/* FAQ */
-.faq-container { max-width: 900px; margin: auto; }
-.faq-item {
-  padding: 30px;
-  margin-bottom: 25px;
-  border-radius: var(--radius);
-  cursor: pointer;
-  overflow: hidden;
-  background: rgba(255,255,255,.04);
-  border: 1px solid rgba(255,255,255,.06);
-  transition: var(--transition);
-}
-.faq-item:hover { border-color: var(--gold); }
-.faq-question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: var(--text);
-}
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: .6s ease;
-  color: var(--gray);
-}
-.faq-item.active .faq-answer {
-  max-height: 200px;
-  padding-top: 20px;
-}
-.faq-icon {
-  font-size: 1.5rem;
-  color: var(--gold);
-  transition: var(--transition);
-}
-.faq-item.active .faq-icon { transform: rotate(45deg); }
-
-/* AUTHOR BIO */
-.author-bio {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  padding: 40px;
-  background: rgba(255,255,255,.04);
-  border-radius: var(--radius);
-  border: 1px solid rgba(255,255,255,.06);
-  box-shadow: var(--shadow-sm);
-  margin-top: 40px;
-  transition: var(--transition);
-}
-.author-bio:hover { border-color: var(--gold); }
-.author-bio .bio-icon {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--gold), var(--gold-light));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 4rem;
-  color: var(--green-dark);
-  flex-shrink: 0;
-  border: 3px solid var(--gold);
-  transition: var(--transition);
-}
-.author-bio .bio-icon:hover {
-  transform: scale(1.05) rotate(-5deg);
-}
-.author-bio h3 { color: var(--green-dark); }
-.author-bio p { color: var(--gray); }
-
-/* SOCIAL SHARE */
-.social-share {
-  display: flex;
-  gap: 15px;
-  margin-top: 20px;
-}
-.social-share a {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background: rgba(212,175,55,.1);
-  color: var(--gold);
-  font-size: 1.3rem;
-  transition: var(--transition);
-}
-.social-share a:hover {
-  background: var(--gold);
-  color: white;
-  transform: translateY(-8px);
-}
-
-/* RELATED POSTS */
-.related-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
-.related-card {
-  padding: 25px;
-  background: rgba(255,255,255,.04);
-  border-radius: var(--radius);
-  border: 1px solid rgba(255,255,255,.06);
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition);
-}
-.related-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--gold);
-}
-.related-card h4 { color: var(--green-dark); margin-bottom: 10px; }
-.related-card a { color: var(--gold); font-weight: 600; }
-
-/* NEWSLETTER */
-.email-form {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-.email-form input {
-  width: 350px;
-  padding: 18px 25px;
-  border: none;
-  outline: none;
-  border-radius: 100px;
-  font-size: 1rem;
-  background: rgba(255,255,255,.06);
-  color: var(--text);
-  border: 1px solid rgba(212,175,55,.15);
-  transition: var(--transition);
-}
-.email-form input:focus {
-  border-color: var(--gold);
-  box-shadow: 0 0 0 4px rgba(212,175,55,.1);
-}
-.email-form button { border: none; cursor: pointer; }
-
-/* AD SPACE */
-.ad-space {
-  padding: 50px;
-  border-radius: var(--radius);
-  background: rgba(255,255,255,.02);
-  border: 1px dashed rgba(212,175,55,.2);
-  text-align: center;
-  color: var(--gray);
-  transition: var(--transition);
-}
-.ad-space:hover { border-color: var(--gold); }
-
-/* FOOTER */
-.footer {
-  background: var(--green-dark);
-  padding: 100px 0 40px;
-  color: white;
-}
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px;
-  margin-bottom: 50px;
-}
-.footer h4 {
-  color: var(--gold);
-  margin-bottom: 20px;
-}
-.footer ul li { margin-bottom: 12px; }
-.footer a { color: rgba(255,255,255,.8); transition: var(--transition); }
-.footer a:hover { color: var(--gold); padding-left: 6px; }
-.copyright {
-  text-align: center;
-  margin-top: 30px;
-  color: rgba(255,255,255,.6);
-}
-
-/* BACK TO TOP */
-#backToTop {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 60px;
-  height: 60px;
-  border: none;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--gold), var(--gold-light));
-  color: var(--green-dark);
-  font-size: 1.5rem;
-  font-weight: 700;
-  cursor: pointer;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  box-shadow: var(--shadow-md);
-  z-index: 999;
-  transition: var(--transition);
-}
-#backToTop:hover {
-  transform: translateY(-10px);
-  box-shadow: var(--shadow-lg);
-}
-
-/* DARK MODE BUTTON */
-#darkModeBtn {
-  position: fixed;
-  bottom: 100px;
-  right: 30px;
-  width: 50px;
-  height: 50px;
-  border: none;
-  border-radius: 50%;
-  background: var(--gold);
-  color: var(--green-dark);
-  font-size: 1.3rem;
-  cursor: pointer;
-  z-index: 999;
-  box-shadow: var(--shadow-md);
-  transition: var(--transition);
-}
-#darkModeBtn:hover { transform: scale(1.1); }
-
-/* MOBILE */
-@media(max-width:768px) {
-  .hero-title { font-size: 3rem; }
-  .section-title h2 { font-size: 2.2rem; }
-  .email-form input { width: 100%; }
-  .search-bar input { width: 100%; }
-  .author-bio { flex-direction: column; text-align: center; }
-  .section-title p { font-size: .95rem; }
-  .hero-badge .badge-item { font-size: .8rem; padding: 10px 16px; }
-}
-</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>NurulBayt — Islamic Parenting for Modern Muslim Families</title>
+    <meta name="description" content="Expert Islamic parenting advice for Muslim families. Practical Quran and Sunnah tips for raising righteous children."/>
+    <meta name="keywords" content="Islamic parenting, Muslim family, Quran, Sunnah, Tarbiyah, duas for kids, screen time Islam"/>
+    <meta name="author" content="NurulBayt"/>
+    <meta name="robots" content="index, follow"/>
+    <link rel="canonical" href="https://subkuch443786.github.io/nurulbayt/"/>
+    <meta property="og:title" content="NurulBayt — Islamic Parenting"/>
+    <meta property="og:description" content="Practical Islamic parenting advice for modern Muslim families."/>
+    <meta property="og:url" content="https://subkuch443786.github.io/nurulbayt/"/>
+    <meta property="og:type" content="website"/>
+    <meta name="theme-color" content="#0c2d25"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <!-- LOADER -->
-<div class="loader" id="loader">
-  <div class="loader-logo">🕌 NurulBayt</div>
-  <div class="loader-circle"></div>
-  <div class="loader-progress"><div class="loader-progress-bar"></div></div>
-</div>
-
-<!-- PROGRESS BAR -->
-<div class="progress-bar" id="progressBar"></div>
+<div id="loader"><h1>🕌 NurulBayt</h1><div class="spinner"></div></div>
 
 <!-- NAVBAR -->
 <nav id="navbar">
-  <div class="nav-container">
-    <a href="index.html" class="logo">🕌 <span>NurulBayt</span></a>
-    <ul class="nav-menu" id="navMenu">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="#articles">Articles</a></li>
-      <li><a href="about-us.html">About</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="contact-us.html">Contact</a></li>
-    </ul>
-    <div class="menu-btn" id="menuBtn">☰</div>
-  </div>
+    <div class="container nav-container">
+        <a href="index.html" class="logo">🕌 <span>NurulBayt</span></a>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+        <div class="menu-btn" id="menuBtn">☰</div>
+        <button id="darkModeBtn" onclick="toggleDarkMode()">🌙</button>
+    </div>
 </nav>
-
-<!-- BREADCRUMB -->
-<div class="container">
-  <div class="breadcrumb">
-    <a href="index.html">Home</a> <span>›</span> <a href="#articles">Articles</a> <span>›</span> <span>Premium Islamic Parenting</span>
-  </div>
-</div>
 
 <!-- SEARCH BAR -->
 <div class="container">
-  <div class="search-bar">
-    <input type="text" id="searchInput" placeholder="🔍 Search Islamic parenting articles...">
-  </div>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="🔍 Search articles...">
+    </div>
 </div>
 
 <!-- HERO -->
 <section id="home" class="hero">
-  <div class="container">
-    <div class="hero-content reveal">
-      <div class="hero-subtitle">Bismillah-ir-Rahman-ir-Rahim</div>
-      <h1 class="hero-title">Raising <span>Righteous Children</span> In A Modern World</h1>
-      <p class="hero-text">Premium Islamic parenting advice, Muslim family guidance, Quran and Sunnah based parenting tips, duas for children and practical solutions for raising children who love Allah.</p>
-      <a href="#articles" class="btn-primary">Explore Articles</a>
-      <div class="hero-badge">
-        <div class="badge-item">✨ Quran & Sunnah Based</div>
-        <div class="badge-item">🌍 Trusted By Muslim Families</div>
-        <div class="badge-item">📚 Premium Parenting Resources</div>
-      </div>
+    <div class="container">
+        <div class="hero-content reveal">
+            <p class="hero-subtitle">🌙 Bismillah</p>
+            <h1 class="hero-title">Raising <span>Righteous Children</span><br>In A Modern World</h1>
+            <p class="hero-text">Practical Islamic parenting advice based on Quran and Sunnah. Helping Muslim families raise children with faith, character, and love for Allah.</p>
+            <a href="#articles" class="btn-primary">📖 Explore Articles</a>
+            <div class="hero-badge">
+                <span class="badge-item">✨ Quran & Sunnah</span>
+                <span class="badge-item">🌍 Trusted Families</span>
+                <span class="badge-item">📚 Free Resources</span>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
 <!-- STATS -->
 <section>
-  <div class="container">
-    <div class="section-title reveal">
-      <h2>Trusted By Muslim Families Worldwide</h2>
-      <p>Providing Quran and Sunnah based parenting resources for raising righteous children.</p>
+    <div class="container">
+        <div class="section-title reveal">
+            <h2>Helping Muslim Families Worldwide</h2>
+            <p>Authentic guidance based on Quran and Sunnah for modern parenting challenges.</p>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card hover-lift reveal"><h3 class="counter" data-target="150">0</h3><p>Articles</p></div>
+            <div class="stat-card hover-lift reveal"><h3 class="counter" data-target="100">0</h3><p>% Authentic</p></div>
+            <div class="stat-card hover-lift reveal"><h3 class="counter" data-target="5000">0</h3><p>Readers</p></div>
+            <div class="stat-card hover-lift reveal"><h3 class="counter" data-target="24">0</h3><p>7 Free Access</p></div>
+        </div>
     </div>
-    <div class="stats-grid">
-      <div class="stat-card hover-lift reveal"><h3 class="counter" data-target="5000">0</h3><p>Happy Parents</p></div>
-      <div class="stat-card hover-lift reveal"><h3 class="counter" data-target="150">0</h3><p>Islamic Articles</p></div>
-      <div class="stat-card hover-lift reveal"><h3 class="counter" data-target="100">0</h3><p>% Authentic Guidance</p></div>
-      <div class="stat-card hover-lift reveal"><h3 class="counter" data-target="365">0</h3><p>Days Free Access</p></div>
-    </div>
-  </div>
 </section>
 
-<!-- QURAN SECTION -->
+<!-- QURAN AYAH -->
 <section>
-  <div class="container">
-    <div class="glass reveal" style="padding:60px;text-align:center;">
-      <h2 style="font-family:'Playfair Display',serif;color:var(--gold);margin-bottom:25px;font-size:2.5rem;">رَّبِّ هَبْ لِي مِنَ الصَّالِحِينَ</h2>
-      <p style="font-size:1.1rem;color:var(--gray);max-width:800px;margin:auto;">"My Lord, grant me righteous children." (Surah As-Saffat 37:100)</p>
-      <br>
-      <p style="max-width:850px;margin:auto;">Through Islamic parenting advice, Muslim family guidance and authentic Quran and Sunnah teachings, we aim to help parents raise children with faith, wisdom and strong character.</p>
+    <div class="container">
+        <div class="glass reveal" style="padding:60px;text-align:center;">
+            <h2 style="font-family:'Playfair Display',serif;color:var(--gold);font-size:2.5rem;">رَّبِّ هَبْ لِي مِنَ الصَّالِحِينَ</h2>
+            <p style="color:var(--gray);max-width:800px;margin:auto;">"My Lord, grant me righteous children." — Surah As-Saffat (37:100)</p>
+            <br>
+            <p style="color:var(--gray);max-width:850px;margin:auto;">Practical Islamic parenting advice for Muslim families navigating faith and family in the modern world.</p>
+        </div>
     </div>
-  </div>
 </section>
 
-<!-- FEATURED ARTICLES -->
+<!-- ARTICLES -->
 <section id="articles">
-  <div class="container">
-    <div class="section-title reveal">
-      <h2>Featured Articles</h2>
-      <p>Discover premium Islamic parenting advice and practical Quran and Sunnah based solutions.</p>
+    <div class="container">
+        <div class="section-title reveal">
+            <h2>Featured Articles</h2>
+            <p>Practical guidance inspired by the Quran and Sunnah.</p>
+        </div>
+        <div class="articles-grid" id="articleGrid">
+            <div class="article-card glass hover-lift reveal">
+                <img src="https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=800&q=80" alt="Islamic parenting">
+                <div class="article-content">
+                    <span class="article-category">Tarbiyah</span>
+                    <h3>How To Raise Children Who Love Allah</h3>
+                    <p>Practical habits inspired by the Sunnah to build strong faith and character.</p>
+                    <a href="article-1.html">Read More →</a>
+                </div>
+            </div>
+            <div class="article-card glass hover-lift reveal">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Teach Salah">
+                <div class="article-content">
+                    <span class="article-category">Salah</span>
+                    <h3>7 Easy Ways To Teach Salah To Children</h3>
+                    <p>Simple, loving methods to help children love prayer.</p>
+                    <a href="article-2.html">Read More →</a>
+                </div>
+            </div>
+            <div class="article-card glass hover-lift reveal">
+                <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=80" alt="Screen time">
+                <div class="article-content">
+                    <span class="article-category">Digital Life</span>
+                    <h3>Healthy Screen Time Rules For Muslim Families</h3>
+                    <p>Islamic values and practical tips for managing technology at home.</p>
+                    <a href="article-3.html">Read More →</a>
+                </div>
+            </div>
+            <div class="article-card glass hover-lift reveal">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80" alt="Islamic habits">
+                <div class="article-content">
+                    <span class="article-category">Habits</span>
+                    <h3>10 Daily Habits Of Righteous Muslim Children</h3>
+                    <p>Simple habits inspired by the Quran and Sunnah for children.</p>
+                    <a href="article-4.html">Read More →</a>
+                </div>
+            </div>
+            <div class="article-card glass hover-lift reveal">
+                <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=80" alt="Islamic home">
+                <div class="article-content">
+                    <span class="article-category">Home</span>
+                    <h3>Creating An Islamic Environment At Home</h3>
+                    <p>Small changes that make your home a place of faith and peace.</p>
+                    <a href="article-5.html">Read More →</a>
+                </div>
+            </div>
+            <div class="article-card glass hover-lift reveal">
+                <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=800&q=80" alt="Quran learning">
+                <div class="article-content">
+                    <span class="article-category">Quran</span>
+                    <h3>Making Quran Learning Enjoyable For Kids</h3>
+                    <p>Practical ideas to build a positive connection with the Quran.</p>
+                    <a href="article-6.html">Read More →</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="articles-grid">
-      <div class="article-card glass hover-lift reveal">
-        <img src="https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=800&q=80" alt="Islamic parenting tips">
-        <div class="article-content">
-          <div class="article-category">Islamic Parenting</div>
-          <h3>How To Raise Children Who Love Allah</h3>
-          <p>Learn practical Quran and Sunnah based habits to strengthen faith and build righteous character.</p>
-          <a href="article-love-allah.html">Read More →</a>
-        </div>
-      </div>
-      <div class="article-card glass hover-lift reveal">
-        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Teach salah to kids">
-        <div class="article-content">
-          <div class="article-category">Salah For Kids</div>
-          <h3>7 Easy Ways To Teach Salah To Children</h3>
-          <p>Simple and effective methods for helping children develop love for prayer and Islamic routines.</p>
-          <a href="article-salah.html">Read More →</a>
-        </div>
-      </div>
-      <div class="article-card glass hover-lift reveal">
-        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=80" alt="Screen time Islam">
-        <div class="article-content">
-          <div class="article-category">Modern Challenges</div>
-          <h3>Healthy Screen Time Rules For Muslim Families</h3>
-          <p>Discover healthy digital habits and Islamic values for managing technology in modern homes.</p>
-          <a href="article-screen.html">Read More →</a>
-        </div>
-      </div>
-      <div class="article-card glass hover-lift reveal">
-        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80" alt="Islamic education">
-        <div class="article-content">
-          <div class="article-category">Faith Building</div>
-          <h3>10 Daily Habits Of Righteous Muslim Children</h3>
-          <p>Simple habits inspired by Quran and Sunnah that help children develop strong faith and good manners.</p>
-          <a href="article-habits.html">Read More →</a>
-        </div>
-      </div>
-      <div class="article-card glass hover-lift reveal">
-        <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=80" alt="Muslim family">
-        <div class="article-content">
-          <div class="article-category">Family Life</div>
-          <h3>Creating An Islamic Environment At Home</h3>
-          <p>Learn how small daily changes can transform your home into a place of faith, peace and learning.</p>
-          <a href="article-home.html">Read More →</a>
-        </div>
-      </div>
-      <div class="article-card glass hover-lift reveal">
-        <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=800&q=80" alt="Quran learning">
-        <div class="article-content">
-          <div class="article-category">Quran Learning</div>
-          <h3>Making Quran Learning Enjoyable For Kids</h3>
-          <p>Practical ideas to help children build a positive connection with the Quran from an early age.</p>
-          <a href="article-quran.html">Read More →</a>
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
 
 <!-- TESTIMONIALS -->
 <section>
-  <div class="container">
-    <div class="section-title reveal">
-      <h2>Loved By Muslim Families Around The World</h2>
-      <p>Thousands of Muslim parents trust NurulBayt for Islamic parenting advice and practical family guidance.</p>
+    <div class="container">
+        <div class="section-title reveal">
+            <h2>What Parents Say</h2>
+            <p>Real feedback from families who found guidance at NurulBayt.</p>
+        </div>
+        <div class="testimonial-grid">
+            <div class="testimonial-card hover-lift reveal">
+                <div class="stars">★★★★★</div>
+                <p>"The articles are practical and inspired by authentic sources. A valuable resource for any Muslim family."</p>
+                <div class="author">— Fatima, UK</div>
+            </div>
+            <div class="testimonial-card hover-lift reveal">
+                <div class="stars">★★★★★</div>
+                <p>"The Salah and screen time guides helped us create a balanced Islamic environment at home."</p>
+                <div class="author">— Ahmed, Canada</div>
+            </div>
+            <div class="testimonial-card hover-lift reveal">
+                <div class="stars">★★★★★</div>
+                <p>"A beautiful, faith-based parenting resource. Highly recommended for new parents."</p>
+                <div class="author">— Maryam, USA</div>
+            </div>
+        </div>
     </div>
-    <div class="testimonial-grid">
-      <div class="testimonial-card hover-lift reveal">
-        <div class="stars">★★★★★</div>
-        <p>"NurulBayt completely changed the way we teach Islam to our children. The articles are simple, practical and inspiring."</p>
-        <div class="author">— Fatima • United Kingdom</div>
-      </div>
-      <div class="testimonial-card hover-lift reveal">
-        <div class="stars">★★★★★</div>
-        <p>"The guidance about Salah and screen time helped our family create a healthier Islamic environment at home."</p>
-        <div class="author">— Ahmed • Canada</div>
-      </div>
-      <div class="testimonial-card hover-lift reveal">
-        <div class="stars">★★★★★</div>
-        <p>"A beautiful resource for Muslim mothers and fathers looking for authentic Quran and Sunnah based parenting advice."</p>
-        <div class="author">— Maryam • USA</div>
-      </div>
-    </div>
-  </div>
 </section>
 
-<!-- ABOUT SECTION (LINK TO ABOUT PAGE) -->
+<!-- ABOUT -->
 <section id="about">
-  <div class="container">
-    <div class="section-title reveal">
-      <h2>About NurulBayt</h2>
-      <p>Premium Islamic parenting resources inspired by the Quran and Sunnah for Muslim families worldwide.</p>
-    </div>
-    <div class="articles-grid">
-      <div class="article-card glass hover-lift reveal">
-        <div class="article-content">
-          <div class="article-category">Our Mission</div>
-          <h3>Helping Parents Raise Righteous Children</h3>
-          <p>We provide practical Islamic parenting advice, Muslim family guidance and authentic Quran and Sunnah teachings to help children grow with strong faith and beautiful character.</p>
+    <div class="container">
+        <div class="section-title reveal">
+            <h2>About NurulBayt</h2>
+            <p>Helping parents raise righteous children through authentic Islamic guidance.</p>
         </div>
-      </div>
-      <div class="article-card glass hover-lift reveal">
-        <div class="article-content">
-          <div class="article-category">Our Vision</div>
-          <h3>Building A Strong Ummah Through Families</h3>
-          <p>Our vision is to inspire Muslim mothers and fathers to create homes filled with love, wisdom and Islamic values that benefit future generations.</p>
+        <div class="articles-grid">
+            <div class="article-card glass hover-lift reveal">
+                <div class="article-content">
+                    <span class="article-category">Mission</span>
+                    <h3>Helping Parents Raise Righteous Children</h3>
+                    <p>Practical Islamic parenting advice rooted in the Quran and Sunnah.</p>
+                </div>
+            </div>
+            <div class="article-card glass hover-lift reveal">
+                <div class="article-content">
+                    <span class="article-category">Vision</span>
+                    <h3>Building Strong Muslim Families</h3>
+                    <p>Inspiring homes filled with love, wisdom, and Islamic values.</p>
+                </div>
+            </div>
+            <div class="article-card glass hover-lift reveal">
+                <div class="article-content">
+                    <span class="article-category">Values</span>
+                    <h3>Authentic & Practical Guidance</h3>
+                    <p>Combining modern parenting solutions with timeless Islamic teachings.</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="article-card glass hover-lift reveal">
-        <div class="article-content">
-          <div class="article-category">Why Choose Us</div>
-          <h3>Modern Solutions With Timeless Guidance</h3>
-          <p>From screen time challenges to Salah routines and Islamic habits, we combine modern parenting solutions with authentic teachings.</p>
+        <div style="text-align:center;margin-top:40px;">
+            <a href="about-us.html" class="btn-primary">Learn More →</a>
         </div>
-      </div>
     </div>
-    <div style="text-align:center;margin-top:40px;">
-      <a href="about-us.html" class="btn-primary">Learn More About Us →</a>
-    </div>
-  </div>
 </section>
 
 <!-- AUTHOR BIO -->
 <section>
-  <div class="container">
-    <div class="author-bio reveal">
-      <div class="bio-icon">🕌</div>
-      <div>
-        <h3>NurulBayt Team</h3>
-        <p>We are a team of Muslim parents, educators and researchers dedicated to providing authentic Islamic parenting guidance. Our content is inspired by the Quran, Sunnah and the rich tradition of Islamic scholarship.</p>
-        <div class="social-share">
-          <a href="https://facebook.com/nurulbayt" aria-label="Facebook">📘</a>
-          <a href="https://instagram.com/nurulbayt" aria-label="Instagram">📸</a>
-          <a href="https://youtube.com/nurulbayt" aria-label="YouTube">▶</a>
-          <a href="https://t.me/nurulbayt" aria-label="Telegram">💬</a>
-          <a href="https://twitter.com/nurulbayt" aria-label="Twitter">🐦</a>
+    <div class="container">
+        <div class="author-bio reveal">
+            <div class="bio-icon">🕌</div>
+            <div>
+                <h3>NurulBayt Team</h3>
+                <p>Muslim parents, educators, and researchers dedicated to authentic Islamic parenting guidance. Inspired by the Quran, Sunnah, and Islamic scholarship.</p>
+                <div class="social-share">
+                    <a href="https://facebook.com/nurulbayt">📘</a>
+                    <a href="https://instagram.com/nurulbayt">📸</a>
+                    <a href="https://youtube.com/nurulbayt">▶</a>
+                    <a href="https://t.me/nurulbayt">💬</a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 
 <!-- FAQ -->
 <section id="faq">
-  <div class="container">
-    <div class="section-title reveal">
-      <h2>Frequently Asked Questions</h2>
-      <p>Answers to common questions about Islamic parenting, Muslim family life and raising righteous children.</p>
+    <div class="container">
+        <div class="section-title reveal">
+            <h2>Frequently Asked Questions</h2>
+            <p>Quick answers to common parenting questions.</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item glass reveal" onclick="toggleFAQ(this)">
+                <div class="faq-question">How can I teach my children to love Salah? <span class="faq-icon">+</span></div>
+                <div class="faq-answer">Create a loving environment, pray together as a family, and encourage with kindness rather than pressure.</div>
+            </div>
+            <div class="faq-item glass reveal" onclick="toggleFAQ(this)">
+                <div class="faq-question">Are the articles based on authentic Islamic teachings? <span class="faq-icon">+</span></div>
+                <div class="faq-answer">Yes. Every article is inspired by the Quran and authentic Sunnah.</div>
+            </div>
+            <div class="faq-item glass reveal" onclick="toggleFAQ(this)">
+                <div class="faq-question">How do I manage screen time for kids in Islam? <span class="faq-icon">+</span></div>
+                <div class="faq-answer">Set healthy boundaries, encourage outdoor time, and balance technology with faith and family values.</div>
+            </div>
+        </div>
     </div>
-    <div class="faq-container">
-      <div class="faq-item glass reveal" onclick="toggleFAQ(this)">
-        <div class="faq-question">How can I teach my children to love Salah? <span class="faq-icon">+</span></div>
-        <div class="faq-answer">Create a loving environment, pray together as a family and encourage children with kindness and consistency rather than pressure.</div>
-      </div>
-      <div class="faq-item glass reveal" onclick="toggleFAQ(this)">
-        <div class="faq-question">Are the articles based on authentic Islamic teachings? <span class="faq-icon">+</span></div>
-        <div class="faq-answer">Yes. Our content is inspired by the Quran, authentic Sunnah and trusted Islamic principles for modern Muslim families.</div>
-      </div>
-      <div class="faq-item glass reveal" onclick="toggleFAQ(this)">
-        <div class="faq-question">How do I manage screen time for kids in Islam? <span class="faq-icon">+</span></div>
-        <div class="faq-answer">Set healthy boundaries, encourage outdoor activities and create Islamic routines that balance technology with faith and family values.</div>
-      </div>
-    </div>
-  </div>
 </section>
 
 <!-- RELATED POSTS -->
 <section>
-  <div class="container">
-    <div class="section-title reveal">
-      <h2>Related Posts</h2>
-      <p>Explore more articles on Islamic parenting and Muslim family life.</p>
+    <div class="container">
+        <div class="section-title reveal">
+            <h2>Related Posts</h2>
+            <p>More articles to support your parenting journey.</p>
+        </div>
+        <div class="related-grid">
+            <div class="related-card reveal">
+                <h4>🕌 Building Islamic Identity in Children</h4>
+                <p>Helping children develop a strong Muslim identity in a modern world.</p>
+                <a href="article-7.html">Read More →</a>
+            </div>
+            <div class="related-card reveal">
+                <h4>🤲 10 Duas Every Child Should Know</h4>
+                <p>Essential duas for children before age 7.</p>
+                <a href="article-8.html">Read More →</a>
+            </div>
+            <div class="related-card reveal">
+                <h4>🌙 Islamic Bedtime Routine for Kids</h4>
+                <p>A calm, faith-filled bedtime routine inspired by the Sunnah.</p>
+                <a href="article-9.html">Read More →</a>
+            </div>
+        </div>
     </div>
-    <div class="related-grid">
-      <div class="related-card reveal">
-        <h4>🕌 Building Islamic Identity in Children</h4>
-        <p>How to help children develop a strong Muslim identity in a modern world.</p>
-        <a href="article-identity.html">Read More →</a>
-      </div>
-      <div class="related-card reveal">
-        <h4>🤲 10 Duas Every Child Should Know</h4>
-        <p>Essential duas for children to memorize before age 7.</p>
-        <a href="article-duas.html">Read More →</a>
-      </div>
-      <div class="related-card reveal">
-        <h4>🌙 Islamic Bedtime Routine for Kids</h4>
-        <p>Step-by-step guide to a calm and faith-filled bedtime routine.</p>
-        <a href="article-routine.html">Read More →</a>
-      </div>
-    </div>
-  </div>
 </section>
 
 <!-- NEWSLETTER -->
 <section>
-  <div class="container">
-    <div class="glass reveal" style="padding:90px 70px;text-align:center;">
-      <h2 style="font-family:'Playfair Display',serif;font-size:3rem;margin-bottom:25px;">Join Our Muslim Parenting Community</h2>
-      <p style="max-width:850px;margin:auto;line-height:2;margin-bottom:40px;">Receive premium Islamic parenting advice, Muslim family guidance, Quran and Sunnah based tips, duas for children and practical family resources directly in your inbox.</p>
-      <form class="email-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <input type="email" name="email" placeholder="Enter your email address" required>
-        <button type="submit" class="btn-primary">Subscribe Now</button>
-      </form>
+    <div class="container">
+        <div class="glass reveal" style="padding:80px;text-align:center;">
+            <h2 style="font-family:'Playfair Display',serif;font-size:2.8rem;margin-bottom:20px;">Join Our Community</h2>
+            <p style="max-width:850px;margin:auto;line-height:2;margin-bottom:40px;">Receive weekly Islamic parenting tips, duas, and practical guidance directly to your inbox. Free, always.</p>
+            <form class="email-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn-primary">Subscribe</button>
+            </form>
+        </div>
     </div>
-  </div>
 </section>
 
-<!-- SOCIAL MEDIA SECTION -->
+<!-- SOCIAL -->
 <section>
-  <div class="container">
-    <div class="section-title reveal">
-      <h2>Connect With Us</h2>
-      <p>Follow NurulBayt for daily Islamic parenting reminders and Muslim family inspiration.</p>
+    <div class="container">
+        <div class="section-title reveal">
+            <h2>Connect With Us</h2>
+            <p>Follow NurulBayt for daily inspiration and parenting reminders.</p>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card glass hover-lift reveal"><a href="https://facebook.com/nurulbayt" style="color:inherit;"><h3>📘 Facebook</h3><p>Join our community</p></a></div>
+            <div class="stat-card glass hover-lift reveal"><a href="https://instagram.com/nurulbayt" style="color:inherit;"><h3>📸 Instagram</h3><p>Daily reminders</p></a></div>
+            <div class="stat-card glass hover-lift reveal"><a href="https://youtube.com/nurulbayt" style="color:inherit;"><h3>▶ YouTube</h3><p>Watch videos</p></a></div>
+            <div class="stat-card glass hover-lift reveal"><a href="https://t.me/nurulbayt" style="color:inherit;"><h3>💬 Telegram</h3><p>Exclusive content</p></a></div>
+        </div>
     </div>
-    <div class="stats-grid">
-      <div class="stat-card glass hover-lift reveal"><a href="https://facebook.com/nurulbayt" style="color:inherit;"><h3>📘 Facebook</h3><p>Join our growing Muslim parenting community.</p></a></div>
-      <div class="stat-card glass hover-lift reveal"><a href="https://instagram.com/nurulbayt" style="color:inherit;"><h3>📸 Instagram</h3><p>Daily reminders and beautiful Islamic quotes.</p></a></div>
-      <div class="stat-card glass hover-lift reveal"><a href="https://youtube.com/nurulbayt" style="color:inherit;"><h3>▶ YouTube</h3><p>Watch educational videos and parenting advice.</p></a></div>
-      <div class="stat-card glass hover-lift reveal"><a href="https://t.me/nurulbayt" style="color:inherit;"><h3>💬 Telegram</h3><p>Get instant updates and exclusive content.</p></a></div>
-    </div>
-  </div>
 </section>
 
-<!-- CONTACT SECTION -->
+<!-- CONTACT -->
 <section id="contact">
-  <div class="container">
-    <div class="section-title reveal">
-      <h2>Get In Touch</h2>
-      <p>Have questions about Islamic parenting, Muslim family life or collaboration opportunities? We'd love to hear from you.</p>
+    <div class="container">
+        <div class="section-title reveal">
+            <h2>Get In Touch</h2>
+            <p>Questions, suggestions, or collaboration ideas? We'd love to hear from you.</p>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card glass hover-lift reveal"><h3>📧 Email</h3><p>support@nurulbayt.com</p></div>
+            <div class="stat-card glass hover-lift reveal"><h3>🌍 Community</h3><p>Global Muslim families</p></div>
+            <div class="stat-card glass hover-lift reveal"><h3>🤝 Partnerships</h3><p>Collaborate with us</p></div>
+            <div class="stat-card glass hover-lift reveal"><h3>💡 Ideas</h3><p>Help us improve</p></div>
+        </div>
+        <div style="text-align:center;margin-top:40px;">
+            <a href="contact-us.html" class="btn-primary">Contact Us →</a>
+        </div>
     </div>
-    <div class="stats-grid">
-      <div class="stat-card glass hover-lift reveal"><h3>📧 Email Support</h3><p>support@nurulbayt.com</p></div>
-      <div class="stat-card glass hover-lift reveal"><h3>🌍 Worldwide Community</h3><p>Serving Muslim families across the globe.</p></div>
-      <div class="stat-card glass hover-lift reveal"><h3>🤝 Partnerships</h3><p>Open for educational and Islamic collaborations.</p></div>
-      <div class="stat-card glass hover-lift reveal"><h3>💡 Suggestions</h3><p>Share your ideas and help us improve.</p></div>
-    </div>
-    <div style="text-align:center;margin-top:40px;">
-      <a href="contact-us.html" class="btn-primary">Contact Us →</a>
-    </div>
-  </div>
 </section>
 
-<!-- RESOURCES SECTION -->
+<!-- RESOURCES -->
 <section>
-  <div class="container">
-    <div class="glass reveal" style="padding:80px;text-align:center;">
-      <h2 style="font-family:'Playfair Display',serif;font-size:2.8rem;margin-bottom:25px;">Recommended Islamic Resources</h2>
-      <p style="max-width:850px;margin:auto;line-height:2;margin-bottom:40px;">Explore trusted Islamic parenting books, Quran learning resources, Muslim family guides and educational materials designed to help children grow with faith, wisdom and excellent character.</p>
-      <a href="#" class="btn-primary">Explore Resources</a>
+    <div class="container">
+        <div class="glass reveal" style="padding:60px;text-align:center;">
+            <h2 style="font-family:'Playfair Display',serif;font-size:2.5rem;margin-bottom:20px;">Recommended Islamic Resources</h2>
+            <p style="max-width:850px;margin:auto;line-height:2;margin-bottom:30px;">Books, Quran learning tools, and family guides to support your parenting journey.</p>
+            <a href="#" class="btn-primary">Explore Resources</a>
+        </div>
+        <div class="ad-space glass reveal" style="margin-top:40px;padding:40px;border:1px dashed rgba(212,175,55,.2);text-align:center;color:var(--gray);">
+            <h3 style="color:var(--gold);">Advertisement Space</h3>
+            <p>Optimized for Google AdSense and affiliate products.</p>
+        </div>
     </div>
-    <div class="ad-space glass reveal" style="margin-top:50px;">
-      <h3 style="color:var(--gold);">Advertisement Space</h3>
-      <p>This premium area is optimized for Google AdSense, affiliate products and future sponsored content.</p>
-    </div>
-  </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <h3 class="logo" style="font-size:2rem;">🕌 <span>NurulBayt</span></h3>
-        <p style="color:rgba(255,255,255,.7);">Premium Islamic parenting platform helping Muslim families raise righteous children through Quran and Sunnah based guidance.</p>
-      </div>
-      <div>
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#articles">Articles</a></li>
-          <li><a href="about-us.html">About</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="contact-us.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="article-love-allah.html">Islamic Parenting</a></li>
-          <li><a href="article-home.html">Muslim Family Guide</a></li>
-          <li><a href="article-quran.html">Quran Learning</a></li>
-          <li><a href="article-habits.html">Daily Duas</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Legal</h4>
-        <ul>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms-and-conditions.html">Terms Of Service</a></li>
-          <li><a href="disclaimer.html">Disclaimer</a></li>
-          <li><a href="#">Cookies Policy</a></li>
-        </ul>
-      </div>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h3 class="logo" style="font-size:2rem;">🕌 <span>NurulBayt</span></h3>
+                <p style="color:rgba(255,255,255,.7);">Helping Muslim families raise righteous children through Quran and Sunnah based guidance.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#articles">Articles</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="article-1.html">Parenting</a></li>
+                    <li><a href="article-5.html">Family Guide</a></li>
+                    <li><a href="article-6.html">Quran Learning</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr style="border-color:rgba(255,255,255,.06);">
+        <div class="copyright">© 2026 NurulBayt • Made with ❤️ for Muslim families</div>
     </div>
-    <hr style="border-color:rgba(255,255,255,.06);">
-    <div class="copyright">© 2026 NurulBayt • Built With ❤️ For Muslim Families Worldwide</div>
-  </div>
 </footer>
 
 <!-- BACK TO TOP -->
 <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
-<!-- DARK MODE BUTTON -->
-<button id="darkModeBtn" onclick="toggleDarkMode()">🌙</button>
-
-<!-- JAVASCRIPT -->
-<script>
-// LOADER
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    document.getElementById("loader").classList.add("hidden");
-  }, 1400);
-});
-
-// SCROLL REVEAL
-const reveals = document.querySelectorAll(".reveal");
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("active");
-    }
-  });
-}, { threshold: 0.12 });
-reveals.forEach(el => revealObserver.observe(el));
-
-// BACK TO TOP
-const backBtn = document.getElementById("backToTop");
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 500) {
-    backBtn.style.display = "flex";
-  } else {
-    backBtn.style.display = "none";
-  }
-});
-
-// PROGRESS BAR
-window.addEventListener("scroll", () => {
-  const scrollTop = document.documentElement.scrollTop;
-  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  const progress = (scrollTop / height) * 100;
-  document.getElementById("progressBar").style.width = progress + "%";
-});
-
-// NAVBAR SCROLL EFFECT
-window.addEventListener("scroll", () => {
-  document.getElementById("navbar").classList.toggle("scrolled", window.scrollY > 50);
-});
-
-// MOBILE MENU
-document.getElementById("menuBtn").addEventListener("click", () => {
-  document.getElementById("navMenu").classList.toggle("open");
-});
-
-// FAQ
-function toggleFAQ(el) {
-  el.classList.toggle("active");
-}
-
-// COUNTER
-const counters = document.querySelectorAll(".counter");
-const counterObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const target = parseInt(entry.target.dataset.target);
-      let current = 0;
-      const increment = Math.ceil(target / 60);
-      const timer = setInterval(() => {
-        current += increment;
-        if (current >= target) {
-          entry.target.textContent = target + (target > 100 ? '+' : '');
-          clearInterval(timer);
-        } else {
-          entry.target.textContent = current;
-        }
-      }, 25);
-      counterObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.5 });
-counters.forEach(el => counterObserver.observe(el));
-
-// DARK MODE
-function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
-  const btn = document.getElementById("darkModeBtn");
-  btn.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
-  localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
-}
-if (localStorage.getItem("theme") === "dark") {
-  document.body.classList.add("dark-mode");
-  document.getElementById("darkModeBtn").textContent = "☀️";
-}
-
-// SEARCH FUNCTION
-document.getElementById("searchInput").addEventListener("input", function() {
-  const query = this.value.toLowerCase();
-  const cards = document.querySelectorAll(".article-card");
-  cards.forEach(card => {
-    const title = card.querySelector("h3").textContent.toLowerCase();
-    const desc = card.querySelector("p").textContent.toLowerCase();
-    card.style.display = (title.includes(query) || desc.includes(query)) ? "block" : "none";
-  });
-});
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
